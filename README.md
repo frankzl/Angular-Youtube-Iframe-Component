@@ -11,6 +11,8 @@ The relevant code is in the <b>YoutubePlayerComponent</b> and the <b>WindowServi
 Since the YoutubeIframeAPI needs to be loaded globally, I did this in the WindowService, where I reference the global window object.
 You need to load this script in your index.html though <b>"https://www.youtube.com/iframe_api"</b>
 
+If you don't understand my code, feel free to hit me up. The code is very messy at the moment. I just wanted to get it running. Since integrating iframes in Angular 2 felt very annoying to me, I thought I'd share my solution. :)
+
 
 
 ## Development server
