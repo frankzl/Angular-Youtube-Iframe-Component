@@ -4,7 +4,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {AppComponent} from './app.component';
 import {MdButtonModule, MdCardModule, MdInputModule, MdToolbarModule} from '@angular/material';
-import {YoutubeService} from './youtube.service';
 import {WindowService} from './window.service';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 
@@ -22,7 +21,7 @@ import { YoutubePlayerComponent } from './youtube-player/youtube-player.componen
     MdInputModule,
     MdButtonModule,
   ],
-  providers: [ YoutubeService, WindowService ],
+  providers: [ WindowService ],
   bootstrap: [ AppComponent ]
 } )
 export class AppModule {

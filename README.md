@@ -6,7 +6,11 @@ I have developed this project, when I was thinking of a different idea (hence th
 
 ## Usage
 If you want to integrate the Youtube API Iframe in your Angular 2 project, you can just extract the necessary components from my code.
-The relevant code is in the </b>YoutubePlayerComponent<b> and the <b>WindowService</b>
+The relevant code is in the <b>YoutubePlayerComponent</b> and the <b>WindowService</b>
+
+Since the YoutubeIframeAPI needs to be loaded globally, I did this in the WindowService, where I reference the global window object.
+You need to load this script in your index.html though <b>"https://www.youtube.com/iframe_api"</b>
+
 
 
 ## Development server
