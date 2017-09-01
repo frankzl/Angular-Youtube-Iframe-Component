@@ -1,16 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {MdButtonModule, MdCardModule, MdInputModule, MdToolbarModule} from '@angular/material';
+import {YoutubeService} from './youtube.service';
+import {WindowService} from './window.service';
+import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 
-@NgModule({
+@NgModule( {
   declarations: [
-    AppComponent
+    AppComponent,
+    YoutubePlayerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+
+    MdToolbarModule,
+    MdCardModule,
+    MdInputModule,
+    MdButtonModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+  providers: [ YoutubeService, WindowService ],
+  bootstrap: [ AppComponent ]
+} )
+export class AppModule {
+}
