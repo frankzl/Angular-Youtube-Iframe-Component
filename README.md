@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
+I have developed this project, when I was thinking of a different idea (hence the name)
+
+## Usage
+If you want to integrate the Youtube API Iframe in your Angular 2 project, you can just extract the necessary components from my code.
+The relevant code is in the </b>YoutubePlayerComponent<b> and the <b>WindowService</b>
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
